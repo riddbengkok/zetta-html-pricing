@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.header {
+    background-color: #1a2332;
+    color: white;
+    padding: 140px 0;
+    text-align: center;
+    min-height: 785px;
+}
+
+.header-title {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.header-subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 713px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Pricing Section */
+.pricing-section {
+    margin-top: -268px;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #2d3748;
+    color: white;
+    padding: 20px 35px;
+    position: relative;
+}
+
+.card-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.card-body {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.price {
+    margin-bottom: 30px;
+}
+
+.price-amount {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.price-period {
+    font-size: 18px;
+    color: #666;
+    margin-left: 5px;
+}
+hr{
+    border-bottom: 1px solid #e5e7eb;
+}
+.features-list {
+    list-style: none;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.features-list li {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.btn-buy {
+    width: 100%;
+    padding: 14px 30px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-buy:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-buy:active {
+    transform: scale(0.98);
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.faq-title {
+    font-size: 36px;
+    font-weight: 400;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    padding: 0 20px;
+}
+
+.faq-question {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 15px;
+}
+
+.faq-answer {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+}
+.card-body-clicked{
+  border: 2px solid #06c100;
+}
+.pricing-currency {
+  font-size: 18px;
+  vertical-align: top;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 60px 0;
+    }
+
+    .header-title {
+        font-size: 36px;
+    }
+
+    .header-subtitle {
+        font-size: 16px;
+    }
+
+    .pricing-section {
+        padding: 40px 0 60px;
+    }
+
+    .pricing-cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .card-body {
+        padding: 30px 25px;
+    }
+
+    .price-amount {
+        font-size: 40px;
+    }
+
+    .faq-section {
+        padding: 60px 0;
+    }
+
+    .faq-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 28px;
+    }
+
+    .header-subtitle {
+        font-size: 14px;
+    }
+
+    .card-body {
+        padding: 25px 20px;
+    }
+
+    .price-amount {
+        font-size: 36px;
+    }
+
+    .faq-title {
+        font-size: 24px;
+    }
+}
+

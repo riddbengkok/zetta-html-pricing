@@ -1,0 +1,13 @@
+{
+  "name": "zettabyte-html",
+  "version": "1.0.0",
+  "description": "Simple Pricing HTML page with live reload",
+  "scripts": {
+    "start": "npx live-server --port=3000 --open=/index.html --watch=."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}
+
